@@ -39,7 +39,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 5. What are primary keys? Why are they important?
 
-  Your answer:Primary keys are identifiers of objects in a table by their postion. They are important because they let you select the tiem by its key
+  Your answer:Primary keys are identifiers of objects in a table by their postion. They are important because they let you select the item by its key
 
   Researched answer:Primary keys are the placement of each item in a table and they are important because you have a specfic index to reference.
 

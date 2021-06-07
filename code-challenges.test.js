@@ -31,28 +31,28 @@ var secretCodeWord3 = "Eccentric"
 
 //Make describe and function
 //Test for string to expect: "L4ck4d41s1c4l", "G0bbl3dyg00k", & "Eccentric"
-// describe("encode", () =>{
-//     test ("returns an encoded message", () => {
-//         expect(encode(secretCodeWord1)).toEqual("L4ck4d41s1c4l")
-//         expect(encode(secretCodeWord2)).toEqual("G0bbl3dyg00k")
-//         expect(encode(secretCodeWord3)).toEqual("3cc3ntr1c")
-//     })
-// })
+describe("encode", () =>{
+    test ("returns an encoded message", () => {
+        expect(encode(secretCodeWord1)).toEqual("L4ck4d41s1c4l")
+        expect(encode(secretCodeWord2)).toEqual("G0bbl3dyg00k")
+        expect(encode(secretCodeWord3)).toEqual("3cc3ntr1c")
+    })
+})
 
 
 
 // // b) Create the function that makes the test pass.
 
-// // define characters to find and replace
-// var chars = {'a' : '4', 'e' : '3', 'i' : '1', 'o' : '0', 'A' : '4', 'E' : '3', 'I' : '1', 'O' : '0'}
-// //make my function
+// define characters to find and replace
+var chars = {'a' : '4', 'e' : '3', 'i' : '1', 'o' : '0', 'A' : '4', 'E' : '3', 'I' : '1', 'O' : '0'}
+//make my function
 
-// const encode = (string) => {
-//     // return encoded string
-//     return string.replaceAll(/[aeio]/ig, m => chars[m])
-// }
-// // find and change characters if they are present
-// // return new string with characters changed
+const encode = (string) => {
+    // return encoded string
+    return string.replaceAll(/[aeio]/ig, m => chars[m])
+}
+// find and change characters if they are present
+// return new string with characters changed
 
 
 
@@ -68,30 +68,30 @@ var arrayOfWords2 = ["Mango", "Orange", "Apricot", "Blueberry", "Peach"]
 
 //make describe and function
 //test for expected  array of words
-// describe("includesA", () =>{
-//     test ("returns word containg a", () => {
-//         expect(includesA(arrayOfWords1)).toEqual(["Apple", "Banana"])
-//         expect(includesA(arrayOfWords2)).toEqual(["Mango", "Orange", "Apricot", "Peach"])
+describe("includesA", () =>{
+    test ("returns word containg a", () => {
+        expect(includesA(arrayOfWords1)).toEqual(["Apple", "Banana"])
+        expect(includesA(arrayOfWords2)).toEqual(["Mango", "Orange", "Apricot", "Peach"])
 
-//     })
-// })
+    })
+})
 
 
 // b) Create the function that makes the test pass.
 //make function to test
-// const includesA = (array) => {
-//  //filter through array
-// let filtered = array.filter(value => {
-    // //checking to see if word has letter
-//     let letter = value.includes('a') || value.includes('A')
-//   //conditional if word has letter
-//         if(letter === true){
-//         return value
-//         }
-// })
-// //return only string that contain
-// return filtered
-// }
+const includesA = (array) => {
+ //filter through array
+let filtered = array.filter(value => {
+    //checking to see if word has letter
+    let letter = value.includes('a') || value.includes('A')
+  //conditional if word has letter
+        if(letter === true){
+        return value
+        }
+})
+//return only string that contain
+return filtered
+}
 
 
 

@@ -27,7 +27,7 @@
     This command tells rails, generate a migration file to do this action on our table
 
 7. What is the naming convention for generating a Rails model? What is the naming convention for the table that is generated with this command?
-    Rails models use the CamelCase naming convetntion, these are singular and will automatically map to a plural database table name, whereas the table that is generated is snake_case and it matches the column names in the database
+    Rails models use the PascalCase naming convention, these are singular and will automatically map to a plural database table name, whereas the table that is generated is snake_case and it matches the column names in the database
 
 8. What is the schema file in a Rails application? Can you modify the schema directly? Why or why not?
     You can modify the schema file directly, but generally it is bad practice. This file is not designed to be edited, it just represents the current state of the database. This information come from the Rails guide on Migrations. Everytime you migrate your database, the schema gets dumped and will update itself to match the structure of the database
